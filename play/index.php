@@ -3,8 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Play & Learn with Learnlooly @ elooly.com</title>
-    <script src="mc.js"></script>
-    <script src="dispMC.js"></script>
+    <script src="/learnlooly/learnlooly.js"></script>
     <script src="answer.js"></script>
     <style>
     *{font-family: Arial, sans-serif;}
@@ -18,9 +17,9 @@
       margin: 0.25%;
       text-align: center;
       width: 49.5%;
-      height: 40%;
+      height: 30%;
       border: none;
-      font-size: 48px;
+      font-size: 28px;
     }
     #cnext{
       width:100%;
@@ -38,20 +37,15 @@
     text-align: center;
     height: 19%;
     width: 100%;
-    font-size: 96px;
+    font-size: 90px;
     margin-bottom: auto;
     }
-    #b0{
-        background: #E4334E;
+    #W{
+        text-align: center;
+        
     }
-    #b1{
-        background: #396;
-    }
-    #b2{
-        background: #60F;
-    }
-    #b3{
-        background: #2299E4;
+    #WDIV{
+      margin: 0 auto;
     }
     </style>
   </head>
@@ -60,5 +54,60 @@
   Question Loading...
 </div>
   </body>
-  <script> randomQuestion(); // Toda! </script>
+  <script> 
+  var basearr = [
+    ['Rhode Island', 'Providence'],
+    ['Alaska', 'Juneau'],
+    ['Arizona', 'Phoenix'],
+    ['Arkansas', 'Little Rock'],
+    ['California', 'Sacramento'],
+    ['Neveda', 'Carson City'],
+    ['Oregon', 'Salem'],
+    ['Washington', 'Olympia'],
+    ['Idaho', 'Boise'],
+    ['Utah', 'Salt Lake City'],
+    ['New Mexico', 'Santa Fe'],
+    ['Colorado', 'Denver'],
+    ['Wyoming', 'Cheyenne'],
+    ['Montana', 'Helena'],
+    ['North Dakota', 'Bismark'],
+    ['South Dakota', 'Pierre'],
+    ['Nebraska', 'Lincoln'],
+    ['Kansas', 'Topeka'],
+    ['Oklahoma', 'Oklahoma City'],
+    ['Texas', 'Austin'],
+    ['Louisiana', 'Baton Rouge'],
+    ['Hawaii', 'Honolulu'],
+    ['Missouri', 'Jefferson City'],
+    ['Iowa', 'Des Moines'],
+    ['Minnesota', 'St. Paul'],
+    ['Michigan', 'Lansing'],
+    ['Mississippi', 'Jackson'],
+    ['Alabama', 'Montgomery'],
+    ['Georgia', 'Atlanta'],
+    ['Florida', 'Tallahassee'],
+    ['Tennesse', 'Nashville'],
+    ['Kentucky', 'Frankfort'],
+    ['Illinois', 'Springfield'],
+    ['Indiana', 'Indianapollis'],
+    ['Wisconsin', 'Madison'],
+    ['Ohio', 'Colombus'],
+    ['South Carolina', 'Colombia'],
+    ['North Carolina', 'Raleigh'],
+    ['Virginia', 'Richmond'],
+    ['West Virginia', 'Charleston'],
+    ['Pennsylvania', 'Harrisburg'],
+    ['New York', 'Albany'],
+    ['New Jersey ', 'Trenton'],
+    ['Maryland', 'Annapolis'],
+    ['Delaware', 'Dover'],
+    ['Massachusetts', 'Boston'],
+    ['Maine', 'Augusta'],
+    ['Vermont', 'Montpelier'],
+    ['New Hampshire', 'Concord'],
+    ['Connecticut', 'Hartford']
+  ] 
+  var MClist = getMCitems(basearr)
+  randomQuestion(MClist,{type: 0, color: CP}); // Toda! 
+  </script>
 </html>
